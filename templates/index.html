@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Essay Generator</title>
+  </head>
+  <body>
+    <h1>Essay Generator</h1>
+    <form action="/generate" method="POST">
+      <label for="title">Title:</label><br>
+      <input type="text" id="title" name="title" required><br>
+      <label for="length">Length:</label><br>
+      <input type="number" id="length" name="length" required><br>
+      <label for="language">Language:</label><br>
+      <select id="language" name="language" required>
+        <option value="en">English</option>
+        <option value="zh">Chinese</option>
+        <option value="ja">Japanese</option>
+        <option value="ko">Korean</option>
+      </select><br>
+      <br>
+      <input type="submit" value="Generate">
+    </form>
+  </body>
+</html>
